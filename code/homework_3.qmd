@@ -122,6 +122,59 @@ ggplot(phone_data_clean, aes(x = School_day, y = Duration, fill = School_day)) +
 
 ## d. Table presentation
 
-[]
+```{r}
+
+# Calculate summary statistics from cleaned phone data
+summary_table <- phone_data_clean %>%
+  group_by(School_day) %>%  # Group data by school day status (TRUE/FALSE)
+  
+  # Calculate summary statistics for each group
+  summarise(
+    Mean = round(mean(Duration), 1),    # Average duration rounded to 1 decimal
+    SD = round(sd(Duration), 1),        # Standard deviation
+    Median = round(median(Duration), 1), # Median value
+    Q1 = round(quantile(Duration, 0.25), 1), # First quartile (25th percentile)
+    Q3 = round(quantile(Duration, 0.75), 1), # Third quartile (75th percentile)
+    N = n()  # Count of observations in each group
+  ) %>%
+  
+  # Convert logical School_day to descriptive labels
+  mutate(School_day = ifelse(School_day, "School Day", "Non-School Day"))
+
+# Create the flextable object
+ft <- flextable(summary_table) %>%
+  
+  # Set clear column headers
+  set_header_labels(
+    School_day = "Day Type",
+    Mean = "Mean (min)",
+    SD = "SD (min)",
+    Median = "Median (min)",
+    Q1 = "Q1 (min)",
+    Q3 = "Q3 (min)",
+    N = "Days"
+  ) %>%
+  
+  # Add a multi-level header to group related statistics
+  add_header_row(
+    values = c("", "Central Tendency", "Variability", "Quartiles", ""),
+    colwidths = c(1, 2, 1, 2, 1)  # Column spans for header groups
+  ) %>%
+  
+  # Apply visual styling
+  theme_box() %>%  # Basic box theme
+  bg(part = "header", bg = "#2C3E50") %>%  # Dark header background
+  color(part = "header", color = "white") %>%  # White header text
+  bold(part = "header") %>%  # Bold header text
+  align(align = "center", part = "all") %>%  # Center-align all cells
+  width(width = 0.8)  # Set column width
+  
+
+# Display the formatted table
+ft
+  
+
+```
+
 
 
