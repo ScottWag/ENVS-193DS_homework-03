@@ -30,7 +30,7 @@ phone_data <- read_csv(here("data", "phone_data.csv"))
 
 ## a. Data Summarizing
 
-[]
+[I could calculate the mean daily phone usage (response variable, continuous, minutes) and compare it between school days vs. non-school days (predictor variable, groups, yes/no). This comparison is informative because on school days I utilize my phone for educational material in addition to personal use, so I think I will have a greater mean daily usage on school days.
 
 ## b. Visualization
 
