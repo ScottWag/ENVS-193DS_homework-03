@@ -118,7 +118,7 @@ ggplot(phone_data_clean, aes(x = School_day, y = Duration, fill = School_day)) +
 
 ## c. Caption
 
-[]
+[Figure 1. Daily phone usage duration comparison between school days (green) and non-school days (blue) shows individual observations (purple circles), distribution densities (violin plots), quartiles (boxplots), and mean values (orange diamonds).]
 
 ## d. Table presentation
 
