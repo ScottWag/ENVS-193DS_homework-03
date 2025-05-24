@@ -1,0 +1,38 @@
+Date,Duration,Avg_duration_for_week ,Total_Pickups,Location_with_most_usage ,Type_with_most_usage,School_day
+2025-04-17,5:51,5:11,121,Library,Social Media,Yes
+2025-04-18,4:58,5:11,106,Apartment,Videos,Yes
+2025-04-19,3:45,5:11,97,Pool,Social Media,No
+2025-04-20,2:17,4:19,91,Pool,Social Media,No
+2025-04-21,5:43,4:19,117,Apartment,Videos,Yes
+2025-04-22,5:59,4:19,130,Library,Videos,Yes
+2025-04-23,3:46,4:19,113,Apartment,Social Media,Yes
+2025-04-24,3:14,4:19,121,Apartment,Social Media,Yes
+2025-04-25,4:51,4:19,118,Apartment ,Social Media,Yes
+2025-04-26,3:13,4:19,95,Apartment,Videos,No
+2025-04-27,6:02,5:37,125,Apartment,Social Media,No
+2025-04-28,4:58,5:37,120,Library,Social Media,Yes
+2025-04-29,6:10:00.000,5:37,102,Apartment,Videos,Yes
+2025-04-30,4:59,5:37,112,Apartment,Social Media,Yes
+2025-05-01,6:20,5:37,120,Library,Social Media,Yes
+2025-05-02,5:09,5:37,157,Apartment,Social Media,Yes
+2025-05-03,5:43,5:37,143,Apartment ,Social Media,No
+2025-05-04,5:17,5:05,141,Apartment,Social Media,No
+2025-05-05,3:12,5:05,89,Library,Social Media,Yes
+2025-05-06,5:49,5:05,124,Apartment,Videos,Yes
+2025-05-07,4:16,5:05,154,Apartment,Videos,Yes
+2025-05-08,6:13:00.000,5:05,166,Apartment ,Videos,Yes
+2025-05-09,6:03,5:05,101,Apartment,Videos,Yes
+2025-05-10,4:47,5:05,108,Apartment,Social Media,No
+2025-05-11,6:46,5:36,146,Apartment,Social Media,No
+2025-05-12,5:59,5:36,83,Library,Social Media,Yes
+2025-05-13,6:29,5:36,80,Apartment,Videos,Yes
+2025-05-14,6:25,5:36,103,Apartment,Videos,Yes
+2025-05-15,4:33,5:36,145,Library,Social Media,Yes
+2025-05-16,4:20,5:36,103,Library,Social Media,Yes
+2025-05-17,4:38,5:36,105,Apartment,Videos,No
+2025-05-18,4:57,4:20,119,Apartment,Social Media,No
+2025-05-19,4:31,4:20,121,Library,Social Media,Yes
+2025-05-20,5:41,4:20,106,Apartment,Social Media,Yes
+2025-05-21,2:32,4:20,113,Library,Social Media,Yes
+2025-05-22,5:23,4:20,162,Apartment,Social Media,Yes
+2025-05-23,5:25,4:20,126,Apartment,Videos,Yes

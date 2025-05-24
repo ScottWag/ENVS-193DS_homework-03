@@ -22,6 +22,9 @@ library(here)
 library(janitor)
 library(flextable)
 
+#Read in data for Problem 1 (Personal data)
+phone_data <- read_csv(here("data", "phone_data.csv"))
+
 ```
 ## Problem 1. Personal Data
 
