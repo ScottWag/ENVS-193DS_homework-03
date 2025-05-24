@@ -3,6 +3,7 @@ title: "ENVS 193DS - Homework 3"
 author: "Scott Wagner"
 date: "24 May 2025"
 format: html
+toc: true
 ---
 
 ## Github Repository
@@ -172,8 +173,6 @@ ft <- flextable(summary_table) %>%
 
 # Display the formatted table
 ft
-  
-
 ```
 
 
