@@ -21,6 +21,10 @@ library(readxl)
 library(here)
 library(janitor)
 library(flextable)
+library(lubridate)
+library(ggplot2)
+library(ggpubr)
+library(dplyr)
 
 #Read in data for Problem 1 (Personal data)
 phone_data <- read_csv(here("data", "phone_data.csv"))
@@ -30,11 +34,87 @@ phone_data <- read_csv(here("data", "phone_data.csv"))
 
 ## a. Data Summarizing
 
-[I could calculate the mean daily phone usage (response variable, continuous, minutes) and compare it between school days vs. non-school days (predictor variable, groups, yes/no). This comparison is informative because on school days I utilize my phone for educational material in addition to personal use, so I think I will have a greater mean daily usage on school days.
+[I could calculate the mean daily phone usage (response variable, continuous, minutes) and compare it between school days vs. non-school days (predictor variable, groups, yes/no). This comparison is informative because on school days I utilize my phone for educational material in addition to personal use, so I think I will have a greater mean daily usage on school days.]
 
 ## b. Visualization
 
-[]
+```{r}
+
+# Clean the data
+phone_data_clean <- phone_data %>%
+  # Convert Duration to minutes
+  mutate(
+    # First fix the inconsistent formatting (HH:MM vs HH:MM:SS.000)
+    Duration = str_replace(Duration, ":00\\.000$", ""),  # Remove seconds/milliseconds
+    Duration = ifelse(str_count(Duration, ":") == 1, 
+                     paste0("00:", Duration),  # Add hours if missing
+                     Duration),
+    # Convert to duration format then to total minutes
+    Duration = as.numeric(hms(Duration))/60
+  ) %>%
+  # Select only the columns we want
+  select(Duration, School_day) %>%
+  # Convert School_day to logical (TRUE/FALSE)
+  mutate(School_day = School_day == "Yes")
+
+# Calculate summary statistics
+summary_stats <- phone_data_clean %>%
+  group_by(School_day) %>%
+  summarise(
+    mean = mean(Duration),
+    median = median(Duration),
+    n = n(),
+    se = sd(Duration)/sqrt(n())
+  )
+
+# Create visualization
+ggplot(phone_data_clean, aes(x = School_day, y = Duration, fill = School_day)) +
+  # Add raw data points
+  geom_jitter(width = 0.15, size = 3, alpha = 0.6, color = "#6A4C93") +
+  
+  # Add violin plot to show distribution shape
+  geom_violin(width = 0.6, alpha = 0.3, color = NA) +
+  
+  # Add boxplot for quartiles
+  geom_boxplot(width = 0.2, alpha = 0.8, outlier.shape = NA) +
+  
+  # Add mean points
+  geom_point(data = summary_stats, 
+             aes(y = mean), 
+             shape = 23, size = 5, 
+             fill = "#FFA500", color = "black") +
+  
+  # Add mean labels
+  geom_text(data = summary_stats,
+            aes(y = mean, 
+                label = paste0("Mean: ", round(mean, 1), " min")),
+            vjust = -2.5, size = 4.5, fontface = "bold") +
+  
+  # Custom colors and labels
+  scale_fill_manual(values = c("#1982C4", "#8AC926"),
+                    labels = c("Non-School Days", "School Days")) +
+  scale_x_discrete(labels = c("Non-School Days", "School Days")) +
+  
+  # Titles and labels
+  labs(
+    title = "Phone Usage Duration: School Day vs. Non-School Day",
+    subtitle = "Individual observations (purple) with distribution summary",
+    x = "",
+    y = "Daily Phone Usage (minutes)",
+      round(t.test(Duration ~ School_day, data = phone_data_clean)$p.value, 3)) +
+  
+  # Theme adjustments
+  theme_minimal(base_size = 14) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(face = "bold", hjust = 0.5, size = 16),
+    plot.subtitle = element_text(hjust = 0.5, color = "gray40"),
+    axis.text.x = element_text(size = 12, face = "bold"),
+    panel.grid.major.x = element_blank(),
+    plot.caption = element_text(hjust = 0, margin = margin(t = 10))
+  ) 
+```
+
 
 ## c. Caption
 
