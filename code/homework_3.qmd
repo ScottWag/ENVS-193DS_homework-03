@@ -194,11 +194,12 @@ ft
 
 ## Problem 3. Statistical critique
 
-[]
 
 ## a. Revisit and summarize 
 
-[]
+The authors use several statistical tests to analyze the relationship between Halimeda cover and thermal stress (Degree heating weeks) while accounting for habitat differences. First, they apply linear mixed-effects models to evaluate the fixed effects of DHW and habitat while incorporating random site effects. Second, Pearson’s correlation tests assess linear relationships between Halimeda cover and thermal stress across reef zones. Third, pairwise comparisons (such as paired t-tests or non-parametric alternatives) examine site-specific temporal changes in cover. Finally, supplementary analyses (potentially ANOVA/ANCOVA) further validate habitat-related differences independent of thermal stress.
+
+
 
 ## b. Visual clarity
 
