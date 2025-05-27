@@ -32,7 +32,7 @@ phone_data <- read_csv(here("data", "phone_data.csv"))
 
 ```
 
-## Problem 1. Personal Data
+# Problem 1. Personal Data
 
 ## a. Data Summarizing
 
@@ -175,7 +175,7 @@ ft <- flextable(summary_table) %>%
 ft
 ```
 
-## Problem 2. Affective visualization
+# Problem 2. Affective visualization
 
 ## a. Describe in words what an affective visualization could look like for your personal data
 
@@ -193,7 +193,7 @@ ft
 
 \[\]
 
-## Problem 3. Statistical critique
+# Problem 3. Statistical critique
 
 ## a. Revisit and summarize
 
@@ -211,4 +211,4 @@ The authors handled visual "clutter" well, color coding the habitat types with d
 
 ## d. Recommendations
 
-\[\]
+To make the figure better I would first consider adding a linear, or nonlinear regression line (with confidence intervals), separately for each habitat. This helps the viewer assess the relationship between the two variables and categories by reducing the noise that raw data points cause. I would also consider slightly jittering the overlapping points on the left side of the graph in order to reduce visual clutter. After, I would add a caption or footnote stating what the error bars represent in addition to including sample sizes for each year. These give the viewer additional information and clarity about the variability of the data shown. Lastly, I would consider splitting the habitats into two separate panels, one for fore reef and another for reef terrace. This would reduce color dependancy and make trends more clear within each habitat. 
