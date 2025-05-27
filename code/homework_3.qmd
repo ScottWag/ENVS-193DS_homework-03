@@ -203,11 +203,11 @@ The authors use several statistical tests to analyze the relationship between Ha
 
 ## b. Visual clarity
 
-\[\]
+In the figure, the authors of the paper do an effective job visually representing their statistics. The x- and y-axes are logical, with the predictor variable (Degree Heating Weeks) on the x-axis and response variable (Percent cover of Halimeda) on the y-axis. The habitat key includes both categories, fore reef in red and reef terrace in yellow, with the points on the graph reflecting mean precentage for displayed year and standard error bars. However, model predictions and underlying raw data are not included.
 
 ## c. Aesthetic clarity
 
-\[\]
+The authors handled visual "clutter" well, color coding the habitat types with distinct colors, not including any distracting grid lines, and displaying present but non-intrusive error bars. The only problems with visual "clutter" are the overlapping error bars and points on the left side of the graph, more of a function of data than design and mitigated with labeling. The data:ink ratio is high with no additional "ink" on the graph, a concise legend, and purposeful text.
 
 ## d. Recommendations
 
