@@ -35,7 +35,7 @@ phone_data <- read_csv(here("data", "phone_data.csv"))
 
 ## a. Data Summarizing
 
-[I could calculate the mean daily phone usage (response variable, continuous, minutes) and compare it between school days vs. non-school days (predictor variable, groups, yes/no). This comparison is informative because on school days I utilize my phone for educational material in addition to personal use, so I think I will have a greater mean daily usage on school days.]
+I could calculate the mean daily phone usage (response variable, continuous, minutes) and compare it between school days vs. non-school days (predictor variable, groups, yes/no). This comparison is informative because on school days I utilize my phone for educational material in addition to personal use, so I think I will have a greater mean daily usage on school days.
 
 ## b. Visualization
 
@@ -119,7 +119,7 @@ ggplot(phone_data_clean, aes(x = School_day, y = Duration, fill = School_day)) +
 
 ## c. Caption
 
-[Figure 1. Daily phone usage duration comparison between school days (green) and non-school days (blue) shows individual observations (purple circles), distribution densities (violin plots), quartiles (boxplots), and mean values (orange diamonds).]
+Figure 1. Daily phone usage duration comparison between school days (green) and non-school days (blue) shows individual observations (purple circles), distribution densities (violin plots), quartiles (boxplots), and mean values (orange diamonds).
 
 ## d. Table presentation
 
@@ -174,6 +174,41 @@ ft <- flextable(summary_table) %>%
 # Display the formatted table
 ft
 ```
+## Problem 2. Affective visualization
 
+## a. Describe in words what an affective visualization could look like for your personal data
 
+[]
+
+## b. Create a sketch (on paper) of your idea
+
+[]
+
+## c. Make a draft of your visualization
+
+[]
+
+## d. Write an artist statement
+
+[]
+
+## Problem 3. Statistical critique
+
+[]
+
+## a. Revisit and summarize 
+
+[]
+
+## b. Visual clarity
+
+[]
+
+## c. Aesthetic clarity
+
+[]
+
+## d. Recommendations
+
+[]
 
