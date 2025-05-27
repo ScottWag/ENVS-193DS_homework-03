@@ -31,6 +31,7 @@ library(dplyr)
 phone_data <- read_csv(here("data", "phone_data.csv"))
 
 ```
+
 ## Problem 1. Personal Data
 
 ## a. Data Summarizing
@@ -116,7 +117,6 @@ ggplot(phone_data_clean, aes(x = School_day, y = Duration, fill = School_day)) +
   ) 
 ```
 
-
 ## c. Caption
 
 Figure 1. Daily phone usage duration comparison between school days (green) and non-school days (blue) shows individual observations (purple circles), distribution densities (violin plots), quartiles (boxplots), and mean values (orange diamonds).
@@ -174,40 +174,41 @@ ft <- flextable(summary_table) %>%
 # Display the formatted table
 ft
 ```
+
 ## Problem 2. Affective visualization
 
 ## a. Describe in words what an affective visualization could look like for your personal data
 
-[]
+\[\]
 
 ## b. Create a sketch (on paper) of your idea
 
-[]
+\[\]
 
 ## c. Make a draft of your visualization
 
-[]
+\[\]
 
 ## d. Write an artist statement
 
-[]
+\[\]
 
 ## Problem 3. Statistical critique
 
-
-## a. Revisit and summarize 
+## a. Revisit and summarize
 
 The authors use several statistical tests to analyze the relationship between Halimeda cover and thermal stress (degree heating weeks) while accounting for habitat differences. First, they apply linear mixed-effects models to evaluate the fixed effects of thermal stress and habitat while incorporating random site effects. Second, Pearson’s correlation tests assess linear relationships between Halimeda cover and thermal stress across reef zones. Third, pairwise comparisons (paired t-tests) examine site-specific temporal changes in cover. Finally, supplementary analyses (ANOVA) further validate habitat-related differences independent of thermal stress.
 
+![](images/graph-02.png)
+
 ## b. Visual clarity
 
-[]
+\[\]
 
 ## c. Aesthetic clarity
 
-[]
+\[\]
 
 ## d. Recommendations
 
-[]
-
+\[\]
