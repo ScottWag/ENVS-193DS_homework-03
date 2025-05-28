@@ -162,6 +162,12 @@ ft <- flextable(summary_table) %>%
     colwidths = c(1, 2, 1, 2, 1)  # Column spans for header groups
   ) %>%
   
+  # Add title to the table
+  add_header_row(
+    values = "Phone Usage Duration: School Day vs. Non-School Day",
+    colwidths = 7  # Span across all columns
+  ) %>%
+  
   # Apply visual styling
   theme_box() %>%  # Basic box theme
   bg(part = "header", bg = "#2C3E50") %>%  # Dark header background
