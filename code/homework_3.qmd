@@ -183,11 +183,11 @@ For my affective visualization I would like to highlight the four main focal poi
 
 ## b. Create a sketch (on paper) of your idea
 
-![](images/sketch.jpg){width="500"}
+![](images/sketch.jpg){width="400"}
 
 ## c. Make a draft of your visualization
 
-![](images/draft.jpg){width="500"}
+![](images/draft.jpg){width="358"}
 
 ## d. Write an artist statement
 
