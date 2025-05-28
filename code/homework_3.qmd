@@ -191,7 +191,7 @@ For my affective visualization I would like to highlight the four main focal poi
 
 ## d. Write an artist statement
 
-
+I am showing the viewer an image of my personal phone, overlayed with a data visualization of phone usage between school days and non-school days. To separate the two categories, I created two sections next to one another that display the difference in mean daily phone usage and use symbols to distinguish between school vs. non-school days. I gained influence from Georgia, who worked on the project titled, *Week 50: A week of our phones*. I like how she included app icons and that made me realize I could use my own phone home screen to overlay the data, with some app icons kept at the top. My work was done in an app on my ipad that I typically take notes on. It was very interesting to see how I could use it with colors to create my art/visualization. To create my work I first made a sketch that I included in problem 2b based on my phone home screen, with the data overlayed. I then moved to my ipad where I recreated the sketch with color and filled in any missing details.
 
 # Problem 3. Statistical critique
 
