@@ -22,7 +22,6 @@ throughout a decade with two thermal anomalies.” *Coral Reefs* 42:3. https://d
 # Data and File Information
 
 ``` ENVS-193DS_homework-03/
-
 ├── code/
 │ ├── homework_3.qmd # Quarto source file
 │ ├── homework_3.html # Rendered HTML output
